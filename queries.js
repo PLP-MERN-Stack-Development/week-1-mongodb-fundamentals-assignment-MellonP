@@ -184,18 +184,7 @@ db.books.aggregate([
 //Task 5
 //Indexing
 
-const { MongoClient } = require('mongodb');
-
-const uri = 'mongodb://localhost:27017';
-const client = new MongoClient(uri);
-
-async function run() {
-  try {
-    await client.connect();
-    const db = client.db('plp_bookstore');
-    const books = db.collection('books');
-
-    // 1. Create single field index on title
+   // 1. Create single field index on title
     const index1 = await books.createIndex({ title: 1 });
     console.log("Single field index created on title:", index1);
 
