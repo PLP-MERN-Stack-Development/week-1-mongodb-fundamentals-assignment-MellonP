@@ -43,7 +43,7 @@ totalDocsExamined
 
 📸 Screenshot
 Below is a mongo compass screenshot showing successful insert, index creation and performance analysis
-![MongoDB index performance screenshot](./plp_bookstore.jpg)
+![MongoDB index performance screenshot](./Capture.PNG)
 
 📂 File Structure
 
